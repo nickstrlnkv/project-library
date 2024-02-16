@@ -17,7 +17,7 @@
     background: #79a4c3;
 }
 
-.addbook-button {
+#addbook-button {
     border-radius: 20px;
     width: 300px;
     height: 60px;
@@ -43,13 +43,51 @@
     margin: 15px;
 }
 
+.delete-button {
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+    background: #d9d9d9;
+    font-size: 16px;
+    text-align: center;
+    color: #e86f00;
+    font-weight: 600;
+    border: none;
+    margin: 15px;
+}
+
+.delete-button:hover {
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+    background: #e86f00;
+    font-size: 16px;
+    text-align: center;
+    color: #d9d9d9;
+    font-weight: 600;
+    border: none;
+    margin: 15px;
+}
+
 .grid-container--navigation--text {
     font-weight: 600;
 }
 
 .grid-container--main {
     display: grid;
+    justify-content: center;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(10, 1fr);
-    gap: 15px;
+    gap: 10px;
+}
+
+.grid-container--main-book {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.grid-container--main--book--booktext {
+    font-weight: bold;
 }
