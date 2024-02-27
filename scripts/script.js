@@ -60,7 +60,6 @@ addBookButton.addEventListener('click', () => {
   console.log(authorBook, articleBook, pagesBook, isReaded);
 })
 
-// 
 class Book {
   constructor(article, author, pages) {
     this.article = article;
