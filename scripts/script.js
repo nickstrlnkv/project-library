@@ -51,7 +51,7 @@ addBookButton.addEventListener('click', () => {
 
 
   // Add book to array
-  newBook = new Book(authorBook, articleBook, pagesBook, isReaded);
+  newBook = new Book(authorBook, articleBook, pagesBook);
   myLibrary.push(newBook);
   divNewBook.classList.add("grid-container--main-book");
 
@@ -60,13 +60,13 @@ addBookButton.addEventListener('click', () => {
   console.log(authorBook, articleBook, pagesBook, isReaded);
 })
 
-
-function Book(article, author, pages, /* isReaded */) {
-  // the constructor...
-  this.article = article;
-  this.author = author;
-  this.pages = pages;
-  // this.isReaded = isReaded;
+// 
+class Book {
+  constructor(article, author, pages) {
+    this.article = article;
+    this.author = author;
+    this.pages = pages;
+  }
 }
 
 function addBookToLibrary(book) {
